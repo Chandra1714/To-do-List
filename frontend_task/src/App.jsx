@@ -36,6 +36,10 @@ const App = () => {
             path="/tasks"
             element={isLoggedIn ? <TaskManager onLogout={handleLogout} /> : <LoginForm onLogin={handleLogin} />}
           />
+           <Route
+            path="/TEST"
+            element={<LoginForm onLogin={handleLogin} />}
+          />
         </Routes>
       </div>
     </Router>
