@@ -1,0 +1,88 @@
+/* Full Task Manager Layout */
+.task-manager {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 70px); /* full screen minus navbar height */
+  margin-top: 70px; /* avoid navbar overlap */
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* Left Panel - Task Input */
+.task-section.input-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 20px;
+}
+
+/* Card for Input Box */
+.task-section.input-panel .card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+/* Right Panel - Task Output */
+.task-section.output-panel {
+  flex: 1.5;
+  background: linear-gradient(135deg, #7f00ff, #e100ff);
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Heading */
+.task-section.output-panel h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* Task Items */
+.task-section.output-panel ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+
+.task-section.output-panel li {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Buttons inside the list */
+.task-section.output-panel .button-group button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.task-section.output-panel .button-group button:first-child {
+  background: #4cafef;
+  color: white;
+}
+.task-section.output-panel .button-group button:first-child:hover {
+  background: #2196f3;
+}
+.task-section.output-panel .button-group button:last-child {
+  background: #f44336;
+  color: white;
+}
+.task-section.output-panel .button-group button:last-child:hover {
+  background: #d32f2f;
+}

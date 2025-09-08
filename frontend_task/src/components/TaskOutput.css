@@ -1,0 +1,82 @@
+.task-output {
+  flex: 1; /* allows it to grow and fill space */
+  width: 100%;
+  height: calc(100vh - 70px); /* full height minus navbar */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* scroll when content is too long */
+  margin-top: 70px; /* pushes content below navbar */
+  box-sizing: border-box;
+}
+
+/* Title inside task output */
+.task-output h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Task list styling */
+.task-output ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+/* Task items */
+.task-output li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* Task text */
+.task-output span {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+
+/* Buttons layout */
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons style */
+.button-group button {
+  padding: 8px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Edit button */
+.button-group button:first-child {
+  background: #4cafef;
+  color: white;
+}
+.button-group button:first-child:hover {
+  background: #2196f3;
+}
+
+/* Delete button */
+.button-group button:last-child {
+  background: #f44336;
+  color: white;
+}
+.button-group button:last-child:hover {
+  background: #d32f2f;
+}

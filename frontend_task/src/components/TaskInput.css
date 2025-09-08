@@ -1,0 +1,10 @@
+.task-page {
+  background: linear-gradient(135deg, #7f00ff, #e100ff);
+  min-height: calc(100vh - 70px);
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
