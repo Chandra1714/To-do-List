@@ -17,6 +17,8 @@ const App = () => {
   };
 
   return (
+    <div>
+      <h2>This is test component</h2>
     <Router>
       <Navbar isLoggedIn={isLoggedIn} onLogout={handleLogout} />
       <div className="page-wrapper">
@@ -35,9 +37,9 @@ const App = () => {
             element={isLoggedIn ? <TaskManager onLogout={handleLogout} /> : <LoginForm onLogin={handleLogin} />}
           />
         </Routes>
-        <TEST/>
       </div>
     </Router>
+    </div>
   );
 };
 
