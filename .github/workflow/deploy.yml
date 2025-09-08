@@ -1,17 +1,13 @@
- name: Test Workflow
+name: Test Workflow
 
- on:
-  push:
-    branches:
-      -master
+on:
+   push:
+     branches:
+       - master
 
- jobs:
-  hello:
-    runs-on: ubuntu-latest
-    steps:
-      -name: Hello World 
-      run: echo "Hello, World"
-
-    
-   
-
+jobs:
+   hello:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Say Hello
+         run: echo " Workflow is working!"

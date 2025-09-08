@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegisterForm";
 import TaskManager from "./components/TaskManager";
+import TEST from "./TEST"
 import "./global.css";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
             path="/"
             element={<LoginForm onLogin={handleLogin} />}
           />
+          
           <Route
             path="/register"
             element={<RegisterForm />}
@@ -33,6 +35,7 @@ const App = () => {
             element={isLoggedIn ? <TaskManager onLogout={handleLogout} /> : <LoginForm onLogin={handleLogin} />}
           />
         </Routes>
+        <TEST/>
       </div>
     </Router>
   );
